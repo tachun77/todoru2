@@ -71,16 +71,16 @@ class ListTableViewController: UITableViewController {
         cell.selectionStyle = .None
         //cell.detailTextLabel?.text = "details..."
         
-        if (cell.detailTextLabel?.text)! == 1 {
-        cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
-        }else if (cell.detailTextLabel?.text)! == 2 {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
-        }else if (cell.detailTextLabel?.text)! == 3 {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
-        }else if (cell.detailTextLabel?.text)! == 4 {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+        if (cell.detailTextLabel?.text)! == "1" {
+        cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
+        }else if (cell.detailTextLabel?.text)! == "2" {
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
+        }else if (cell.detailTextLabel?.text)! == "3" {
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
+        }else if (cell.detailTextLabel?.text)! == "4" {
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
         } else {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
         }
         
         cell.defaultColor = .lightGrayColor()

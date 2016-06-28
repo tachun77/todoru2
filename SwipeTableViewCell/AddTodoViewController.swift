@@ -1,5 +1,5 @@
 //
-//  AddTodoViewController.swift
+//  Todoル
 //  SwipeTableViewCell
 //
 //  Created by 福島達也 on 2016/06/25.
@@ -13,7 +13,6 @@ class AddTodoViewController: UIViewController {
     
     var todoArray : [AnyObject]=[]
     let saveData = NSUserDefaults.standardUserDefaults()
-    let exp = NSUserDefaults.standardUserDefaults()
     var keiken: Int = 0
     
     
@@ -27,28 +26,35 @@ class AddTodoViewController: UIViewController {
     
     
     @IBAction func importance(sender: UISegmentedControl){
+        let exp : AnyObject = saveData.integerForKey("keikenchi")
         switch sender.selectedSegmentIndex{
             
             
         case 0 : importance = "1"
         self.view.backgroundColor = UIColor(red:1.0,green:0.8,blue:1.0,alpha:1.0)
-//            keiken = keiken + 50
+        keiken = (exp as! Int) + 50
+            print(keiken)
         case 1 : importance = "2"
+        print(keiken)
              self.view.backgroundColor = UIColor(red:1.0,green:0.7,blue:1.0,alpha:1.0)
-//            keiken = keiken + 100
+        keiken = (exp as! Int) + 50
+            print(keiken)
         case 2 : importance = "3"
              self.view.backgroundColor = UIColor(red:1.0,green:0.6,blue:1.0,alpha:1.0)
-//            keiken = keiken + 150
+        keiken = (exp as! Int) + 50
+            print(keiken)
         case 3 : importance = "4"
              self.view.backgroundColor = UIColor(red:1.0,green:0.5,blue:1.0,alpha:1.0)
-//            keiken = keiken  + 200
+        keiken = (exp as! Int) + 50
+            print(keiken)
         case 4 : importance = "5"
              self.view.backgroundColor = UIColor(red:1.0,green:0.4,blue:1.0,alpha:1.0)
-//            keiken = keiken  + 300
+        keiken = (exp as! Int) + 50
+            print(keiken)
         default : importance = "1"
             
         }
-        
+        saveData.setInteger(keiken, forKey:"keikenchi")
     }
     
 //    var todoArray : [AnyObject]=[]
@@ -78,7 +84,7 @@ class AddTodoViewController: UIViewController {
         //保存
         todoArray.append(todoDictionary)
         saveData.setObject(todoArray, forKey:"todo")
-        saveData.setObject(keiken, forKey:"keiken" )
+        saveData.setInteger(keiken, forKey:"keiken" )
         saveData.synchronize()
         performSegueWithIdentifier("tokanryou", sender: nil)
         //self.presentViewController(CompleteViewController, animated: true, completion: nil)        // Viewの移動

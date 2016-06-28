@@ -1,5 +1,5 @@
 //
-//  TableViewController.swift
+//  Todoル
 //  swipecell
 //
 //  Created by 福島達也 on 2016/06/25.
@@ -13,6 +13,7 @@ class ListTableViewController: UITableViewController {
     var todoArray:[AnyObject] = []
     let saveData = NSUserDefaults.standardUserDefaults()
     var itemsCount: Int = 0
+    var keiken: Int = 0
   
   // MARK: load
   override func viewDidLoad() {
@@ -55,6 +56,7 @@ class ListTableViewController: UITableViewController {
 //        let cell = MCSwipeTableViewCell(style: .Subtitle, reuseIdentifier: "cell")
         
         let nowIndexPathDictionary: (AnyObject) = todoArray[indexPath.row]
+        let exp : AnyObject = saveData.integerForKey("keikenchi")
 //        
         cell.textLabel?.text = nowIndexPathDictionary["task"] as? String
         cell.detailTextLabel?.text = nowIndexPathDictionary["importance"] as? String
@@ -76,6 +78,9 @@ class ListTableViewController: UITableViewController {
         
         cell.setSwipeGestureWithView(UIImageView(image: UIImage(named: "check")!), color: .greenColor(), mode: .Exit, state: .State1, completionBlock: { (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in
             print("check")
+            self.keiken = (exp as! Int)  + 50
+            print(self.keiken)
+            self.saveData.setInteger(self.keiken, forKey:"keikenchi")
             self.todoArray.removeAtIndex(indexPath.row)
             self.deleteCell(cell: cell)
             self.saveData.setObject(self.todoArray, forKey:"todo")

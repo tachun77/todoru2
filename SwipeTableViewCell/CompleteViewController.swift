@@ -1,5 +1,5 @@
 //
-//  CompleteViewController.swift
+//  Todoル
 //  SwipeTableViewCell
 //
 //  Created by 福島達也 on 2016/06/25.
@@ -10,7 +10,7 @@ import UIKit
 
 class CompleteViewController: UIViewController {
 
-    let exp = NSUserDefaults.standardUserDefaults()
+    let saveData = NSUserDefaults.standardUserDefaults()
     
     
    @IBOutlet var kkeiken : UILabel!
@@ -24,9 +24,9 @@ class CompleteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let keikenchinow : AnyObject = exp.objectForKey("keiken")!
-        kkeiken.text = keikenchinow["keiken"] as? String
-        
+        let keiken : AnyObject = saveData.integerForKey("keikenchi")
+        let keikenchinow = String(keiken)
+        kkeiken.text = keikenchinow
         
         
         // Do any additional setup after loading the view.

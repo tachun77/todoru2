@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		2731F6C51D1E1E4200B46828 /* AddTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
 		2731F6CB1D1E4C5B00B46828 /* CompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
-		672795D11C5BE56000D54AB4 /* Todoル.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todoル.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		672795D11C5BE56000D54AB4 /* Todoル.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todoル.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		672795D41C5BE56000D54AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		672795D91C5BE56000D54AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		672795DB1C5BE56000D54AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		672795D21C5BE56000D54AB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				672795D11C5BE56000D54AB4 /* Todoル.temp_caseinsensitive_rename.app */,
+				672795D11C5BE56000D54AB4 /* Todoル.app */,
 				672795E51C5BE56000D54AB4 /* Todoル.temp_caseinsensitive_rename.xctest */,
 				672795F01C5BE56000D54AB4 /* Todoル.temp_caseinsensitive_rename.xctest */,
 			);
@@ -163,7 +163,7 @@
 			);
 			name = "Todoル";
 			productName = SwipeTableViewCell;
-			productReference = 672795D11C5BE56000D54AB4 /* Todoル.temp_caseinsensitive_rename.app */;
+			productReference = 672795D11C5BE56000D54AB4 /* Todoル.app */;
 			productType = "com.apple.product-type.application";
 		};
 		672795E41C5BE56000D54AB4 /* TodoルTests */ = {
@@ -430,7 +430,7 @@
 				INFOPLIST_FILE = SwipeTableViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tatsuya-Fukushima.todoru2";
-				PRODUCT_NAME = "Todoル.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "Todoル";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Tatsuya/Documents/iOSapp/Todoル/SwipeTableViewCell/SwipeTableViewCell-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -447,7 +447,7 @@
 				INFOPLIST_FILE = SwipeTableViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tatsuya-Fukushima.todoru2";
-				PRODUCT_NAME = "Todoル.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "Todoル";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Tatsuya/Documents/iOSapp/Todoル/SwipeTableViewCell/SwipeTableViewCell-Bridging-Header.h";
 			};

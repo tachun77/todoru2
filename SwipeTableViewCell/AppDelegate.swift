@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  Todoル
 //  SwipeTableViewCell
 //
 //  Created by 福島達也 on 2016/06/25.
@@ -12,9 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+    let saveData = NSUserDefaults.standardUserDefaults()
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    let exp : AnyObject = saveData.integerForKey("keikenchi")
     // Override point for customization after application launch.
     return true
   }

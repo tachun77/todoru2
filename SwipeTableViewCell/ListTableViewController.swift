@@ -61,6 +61,8 @@ class ListTableViewController: UITableViewController {
         cell.textLabel?.text = nowIndexPathDictionary["task"] as? String
         cell.detailTextLabel?.text = nowIndexPathDictionary["importance"] as? String
         
+//        let jyuyou = nowIndexPathDictionary["importance"] as!Int
+
         print(cell.detailTextLabel)
         
         // setup
@@ -69,7 +71,18 @@ class ListTableViewController: UITableViewController {
         cell.selectionStyle = .None
         //cell.detailTextLabel?.text = "details..."
         
-        cell.detailTextLabel?.textColor = .lightGrayColor()
+        if (cell.detailTextLabel?.text)! == 1 {
+        cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+        }else if (cell.detailTextLabel?.text)! == 2 {
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+        }else if (cell.detailTextLabel?.text)! == 3 {
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+        }else if (cell.detailTextLabel?.text)! == 4 {
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+        } else {
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+        }
+        
         cell.defaultColor = .lightGrayColor()
         //cell.firstTrigger = 0.25;
         //cell!.secondTrigger = 0.50;
@@ -132,5 +145,6 @@ class ListTableViewController: UITableViewController {
     tableView.indexPathForCell(cell)
     tableView.deleteRowsAtIndexPaths([self.tableView.indexPathForCell(cell)!], withRowAnimation: .Fade)
     tableView.endUpdates()
-  }
+    }
 }
+

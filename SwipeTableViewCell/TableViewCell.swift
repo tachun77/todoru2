@@ -9,6 +9,9 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
+    
+    @IBOutlet var todoLabel: UILabel!
+    @IBOutlet var importanceLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -86,7 +86,6 @@ class ListTableViewController: UITableViewController {
         cell.detailTextLabel?.text = nowIndexPathDictionary["importance"] as? String
         
 //        let jyuyou = nowIndexPathDictionary["importance"] as!Int
-
         print(cell.detailTextLabel)
         
         // setup
@@ -95,7 +94,7 @@ class ListTableViewController: UITableViewController {
         cell.selectionStyle = .None
         //cell.detailTextLabel?.text = "details..."
         
-        if nowIndexPathDictionary["importance"] as? Int == 1 {
+        if (cell.detailTextLabel?.text)! == 1 {
         cell.backgroundColor = .blueColor()
             
         }else if (cell.detailTextLabel?.text)! == 2 {

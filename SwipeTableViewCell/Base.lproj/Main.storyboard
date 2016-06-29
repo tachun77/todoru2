@@ -22,17 +22,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ErX-yo-vrt">
-                                            <rect key="frame" x="15" y="25" width="31.5" height="19.5"/>
+                                            <rect key="frame" x="15" y="23" width="39" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eUc-a7-RQu">
-                                            <rect key="frame" x="263.5" y="25" width="41.5" height="19.5"/>
+                                            <rect key="frame" x="263.5" y="27" width="41.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -140,6 +140,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xs5-dD-mVh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task登録完了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-EG-IZg">
                                 <rect key="frame" x="108" y="106" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -159,16 +162,59 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VvG-9V-NaB">
+                                <rect key="frame" x="93" y="316" width="135" height="160"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qz-UK-eoK">
+                                <rect key="frame" x="56" y="227" width="208" height="30"/>
+                                <state key="normal" title="おや、モンスターの様子が...？"/>
+                                <connections>
+                                    <action selector="tosinkagamen:" destination="h0z-ki-Z0i" eventType="touchUpInside" id="O9q-o8-MDF"/>
+                                    <segue destination="G8w-Fl-M1x" kind="modal" identifier="tosinka" id="Mkf-p4-Itq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="haikeiImageView" destination="xs5-dD-mVh" id="LZE-lT-CRT"/>
                         <outlet property="kkeiken" destination="1Jn-le-eYF" id="Coh-iN-j2a"/>
+                        <outlet property="monsterImageView" destination="VvG-9V-NaB" id="tre-Tj-6xW"/>
+                        <outlet property="sinkagamen" destination="9Qz-UK-eoK" id="KYn-xY-gnR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HNX-HW-xNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1368" y="453"/>
+        </scene>
+        <!--Shinka View Controller-->
+        <scene sceneID="7Fx-wM-gMg">
+            <objects>
+                <viewController id="G8w-Fl-M1x" customClass="ShinkaViewController" customModule="Todoル" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z5L-R6-ach"/>
+                        <viewControllerLayoutGuide type="bottom" id="AOz-3E-88E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="idf-PQ-LeO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_gold.png" translatesAutoresizingMaskIntoConstraints="NO" id="zmU-2g-ces">
+                                <rect key="frame" x="0.0" y="112" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Neq-ev-lyB">
+                                <rect key="frame" x="93" y="316" width="135" height="160"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="monsterImageView" destination="Neq-ev-lyB" id="0ft-C0-uHK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6b-CB-Uri" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741" y="451"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KpS-9e-PDC">
@@ -189,4 +235,7 @@
             <point key="canvasLocation" x="177.06666666666666" y="445.88"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_gold.png" width="300" height="300"/>
+    </resources>
 </document>

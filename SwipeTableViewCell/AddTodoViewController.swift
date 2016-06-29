@@ -41,11 +41,11 @@ class AddTodoViewController: UIViewController {
             print(keiken)
         case 2 : importance = "3"
              self.view.backgroundColor = UIColor(red:1.0,green:0.6,blue:1.0,alpha:1.0)
-        keiken = (exp as! Int) + 50
+        keiken = (exp as! Int) - 500
             print(keiken)
         case 3 : importance = "4"
              self.view.backgroundColor = UIColor(red:1.0,green:0.5,blue:1.0,alpha:1.0)
-        keiken = (exp as! Int) + 50
+        keiken = (exp as! Int) - 50
             print(keiken)
         case 4 : importance = "5"
              self.view.backgroundColor = UIColor(red:1.0,green:0.4,blue:1.0,alpha:1.0)

@@ -15,6 +15,30 @@ class ListTableViewController: UITableViewController {
     var itemsCount: Int = 0
     var keiken: Int = 0
   
+    func colorWithHexString (hex:String) -> UIColor {
+        
+        let cString:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
+        
+        if ((cString as String).characters.count != 6) {
+            return UIColor.grayColor()
+        }
+        
+        let rString = (cString as NSString).substringWithRange(NSRange(location: 0, length: 2))
+        let gString = (cString as NSString).substringWithRange(NSRange(location: 2, length: 2))
+        let bString = (cString as NSString).substringWithRange(NSRange(location: 4, length: 2))
+        
+        var r:CUnsignedInt = 0, g:CUnsignedInt = 0, b:CUnsignedInt = 0;
+        NSScanner(string: rString).scanHexInt(&r)
+        NSScanner(string: gString).scanHexInt(&g)
+        NSScanner(string: bString).scanHexInt(&b)
+        
+        return UIColor(
+            red: CGFloat(Float(r) / 255.0),
+            green: CGFloat(Float(g) / 255.0),
+            blue: CGFloat(Float(b) / 255.0),
+            alpha: CGFloat(Float(1.0))
+        )
+    }
   // MARK: load
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -71,16 +95,17 @@ class ListTableViewController: UITableViewController {
         cell.selectionStyle = .None
         //cell.detailTextLabel?.text = "details..."
         
-        if (cell.detailTextLabel?.text)! == 1 {
-        cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+        if nowIndexPathDictionary["importance"] as? Int == 1 {
+        cell.backgroundColor = .blueColor()
+            
         }else if (cell.detailTextLabel?.text)! == 2 {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
         }else if (cell.detailTextLabel?.text)! == 3 {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
         }else if (cell.detailTextLabel?.text)! == 4 {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
         } else {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:0.0)
+            cell.backgroundColor = colorWithHexString("f08080")
         }
         
         cell.defaultColor = .lightGrayColor()

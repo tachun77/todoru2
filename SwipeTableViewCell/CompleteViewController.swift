@@ -18,6 +18,10 @@ class CompleteViewController: UIViewController {
     @IBOutlet var monsterImageView : UIImageView!
     @IBOutlet var haikeiImageView : UIImageView!
     @IBOutlet var sinkagamen : UIButton!
+    @IBOutlet var serihu : UILabel!
+    @IBOutlet var hukidasi : UIImageView!
+    @IBOutlet var tolist : UIButton!
+    
     
     
     
@@ -59,11 +63,20 @@ class CompleteViewController: UIViewController {
         
         if keikenchinow2 == 1000  || keikenchinow2 == 2000 {
             self.sinkagamen.hidden = false
+            serihu.hidden = true
+            hukidasi.hidden = true
+            tolist.hidden = true
+            
         } else {
             self.sinkagamen.hidden = true
+            serihu.hidden = false
+            hukidasi.hidden = false
+            tolist.hidden = false
         }
         
-        
+        let serihuArray = ["NICE!","Wonderful!","ナイスリストアップ！","...やるじゃん","Fantastic!!!","oh yeah!","経験値ありがと！"]
+        let number = Int(rand() % 7)
+        serihu.text = serihuArray[number]
         // Do any additional setup after loading the view.
     }
 
@@ -85,7 +98,7 @@ class CompleteViewController: UIViewController {
         let keikenchinow2 = Int(keikenchinow)
         if keikenchinow2 == 1000 ||  keikenchinow2 == 2000{
         
-        UIImageView.animateWithDuration(3.0, delay: 0.0,
+        UIImageView.animateWithDuration(0.5, delay: 0.0,
                                         options: UIViewAnimationOptions.Repeat, animations: { () -> Void in self.monsterImageView.alpha = 0.0
             }, completion: nil)
         

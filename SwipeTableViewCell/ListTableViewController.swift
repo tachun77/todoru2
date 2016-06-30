@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BubbleTransition
 
 class ListTableViewController: UITableViewController {
  
@@ -14,6 +15,36 @@ class ListTableViewController: UITableViewController {
     let saveData = NSUserDefaults.standardUserDefaults()
     var itemsCount: Int = 0
     var keiken: Int = 0
+    
+    @IBOutlet var toAdd: UIButton!
+    
+    let transition = BubbleTransition()
+    var startingPoint = CGPointZero
+    var duration = 0.5
+    var transitionMode: BubbleTransitionMode = .Present
+    var bubbleColor: UIColor = .yellowColor()
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController
+        controller.transitioningDelegate = self
+        controller.modalPresentationStyle = .Custom
+    }
+    
+    // MARK: UIViewControllerTransitioningDelegate
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .Present
+        transition.startingPoint = someButton.center
+        transition.bubbleColor = someButton.backgroundColor!
+        return transition
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .Dismiss
+        transition.startingPoint = someButton.center
+        transition.bubbleColor = someButton.backgroundColor!
+        return transition
+    }
   
     func colorWithHexString (hex:String) -> UIColor {
         

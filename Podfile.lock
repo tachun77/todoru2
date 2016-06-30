@@ -1,0 +1,12 @@
+PODS:
+  - BubbleTransition (1.0.3)
+
+DEPENDENCIES:
+  - BubbleTransition
+
+SPEC CHECKSUMS:
+  BubbleTransition: a7ae6678721406d60f604cbbea1ace505563119d
+
+PODFILE CHECKSUM: d118584eeb8f2832fc3152cd2fdf364574d558c7
+
+COCOAPODS: 1.0.1

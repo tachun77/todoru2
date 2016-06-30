@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B25136815C429CBD541B070D0C920E9 /* Pods-Todoル-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6462C12E1B2873550B794B91DFD3DBA1 /* Pods-Todoル-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1536ECFE1F24D24CBC3F219FC9CDD69A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		2C7211A6554299A1840D17FD4549E7FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		55D73787EACF3B0618B7C2999A7C0E17 /* Pods-TodoルUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A3910164562F8C59BB3E27221CC534 /* Pods-TodoルUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6849FAAD72F79DF11E5ED301BB57035F /* BubbleTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D3188C04332F9B763891F4674A25CD /* BubbleTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75AE077C18559E6335E72BFB58861CFB /* Pods-TodoルUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1012E667C1086B9CA9317C54CBAD7BB /* Pods-TodoルUITests-dummy.m */; };
+		783D09E6FEFC6B29AA8024206E692CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		86651C4C3D9C1782F7D6635B8527056B /* Pods-TodoルTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A30682D92E2A6A201159149222A2B4AA /* Pods-TodoルTests-dummy.m */; };
+		94119EF55A763A393046F83A556CA3F6 /* Pods-Todoル-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F897965DC31847BFC85FF033E15E245C /* Pods-Todoル-dummy.m */; };
+		C4E79DABD14CC24E9BDC4DABC9818652 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FBA6A6825FF84D37D34288EF083FA3 /* BubbleTransition.swift */; };
+		C9FD2D1EDA1DF772423A8E58EE2DC666 /* BubbleTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B5AC8146A476E741370EEB5B8C662 /* BubbleTransition-dummy.m */; };
+		D53BC15AFEE67026838D66E0B307D8BF /* Pods-TodoルTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F372DB547B8E2A955143277282A73731 /* Pods-TodoルTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD1848CE62317D8B480F9C53CDEC9588 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C04E2FF8D52E70AF4F0BA506AD851880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7372CA79CE92E7AC032175441663EBE4;
+			remoteInfo = BubbleTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00909EF6CC6BBA496AEE8C95E6CB7B15 /* Pods-TodoルTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodoルTests.release.xcconfig"; sourceTree = "<group>"; };
+		01E96CAE63C2FE1B37D9F30DD053E12D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AAE2EC7FAB78902D9CCED6A1A2D38C1 /* Pods_Todo_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todo_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		111A80A3DD488054DE99BE013B396260 /* Pods-TodoルUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TodoルUITests-frameworks.sh"; sourceTree = "<group>"; };
+		11FBA6A6825FF84D37D34288EF083FA3 /* BubbleTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleTransition.swift; path = Source/BubbleTransition.swift; sourceTree = "<group>"; };
+		15217F26C9EFDD32CB8BFC0F5F517091 /* Pods-Todoル.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Todoル.debug.xcconfig"; sourceTree = "<group>"; };
+		2146BACE11EB0CB9BAFB755C6FC76288 /* Pods-TodoルUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TodoルUITests-resources.sh"; sourceTree = "<group>"; };
+		23B070082C88F96BD960D2132D3464B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2911BE634AE3D5E017B163B6C2A9ED8C /* Pods-TodoルTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TodoルTests-frameworks.sh"; sourceTree = "<group>"; };
+		33ADDA87E5F907BB7448A018ABC1C671 /* Pods-TodoルUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TodoルUITests.modulemap"; sourceTree = "<group>"; };
+		36D3188C04332F9B763891F4674A25CD /* BubbleTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-umbrella.h"; sourceTree = "<group>"; };
+		461B5AC8146A476E741370EEB5B8C662 /* BubbleTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BubbleTransition-dummy.m"; sourceTree = "<group>"; };
+		4640C3F983028B370E0E2F09281E5B3E /* BubbleTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BubbleTransition.modulemap; sourceTree = "<group>"; };
+		497491BAF5A9B77C3B95879764640523 /* BubbleTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BubbleTransition.xcconfig; sourceTree = "<group>"; };
+		4AC2678F89A5E199D876D248B9EFD13A /* Pods-Todoル.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Todoル.modulemap"; sourceTree = "<group>"; };
+		4F841A72825D0AD1C41023409F2BE6AB /* Pods-TodoルTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodoルTests.debug.xcconfig"; sourceTree = "<group>"; };
+		513287A6381894854535DD7F78F5387E /* Pods-Todoル-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Todoル-acknowledgements.plist"; sourceTree = "<group>"; };
+		59F420FF2927098FB9175F1AA572AE78 /* Pods-TodoルUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TodoルUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F36A05BA27248CDDA2032559EA63801 /* BubbleTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-prefix.pch"; sourceTree = "<group>"; };
+		612EBA0E34ABFAF3DE04F9362A8EC66D /* Pods-TodoルTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TodoルTests.modulemap"; sourceTree = "<group>"; };
+		6462C12E1B2873550B794B91DFD3DBA1 /* Pods-Todoル-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Todoル-umbrella.h"; sourceTree = "<group>"; };
+		820F619A1D9041E711AFED86B3725C16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870221E3380C583A6EE77DFCC1A7FBEA /* Pods-Todoル-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Todoル-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A1FB3BF21F5CDD5CB77D5F63274AD6C /* Pods-TodoルUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodoルUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A30682D92E2A6A201159149222A2B4AA /* Pods-TodoルTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TodoルTests-dummy.m"; sourceTree = "<group>"; };
+		A526315352A1A94D888AE97553673681 /* Pods-TodoルTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TodoルTests-resources.sh"; sourceTree = "<group>"; };
+		A65AAB9F7F27B924AED195059C4440CB /* Pods_Todo_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todo_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB10D1F2527E0635AE2FB3E5CA66D69E /* Pods-Todoル-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Todoル-resources.sh"; sourceTree = "<group>"; };
+		AE441D4A0ED9EC5AB3B12FBB72B6BE2D /* Pods-TodoルTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TodoルTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B17D7FC138CA21F310863A07E0853F74 /* Pods-Todoル.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Todoル.release.xcconfig"; sourceTree = "<group>"; };
+		C1CEC94FFB8562808DE5D5725F8BB80C /* Pods-TodoルTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TodoルTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C472A1683094D53FF646D47E2A8FD960 /* Pods_Todo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1ED64D10DA20161F57BCFBEF44B122 /* Pods-TodoルUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodoルUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3F79ED48ACCE9C47731A5F066B98073 /* Pods-TodoルUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TodoルUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DD53ACA92AAEC4FEF646DF47A3B6B026 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE44FE0E1CCD47B77B8C91E0C25D7CD5 /* BubbleTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BubbleTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1012E667C1086B9CA9317C54CBAD7BB /* Pods-TodoルUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TodoルUITests-dummy.m"; sourceTree = "<group>"; };
+		F372DB547B8E2A955143277282A73731 /* Pods-TodoルTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TodoルTests-umbrella.h"; sourceTree = "<group>"; };
+		F7A3910164562F8C59BB3E27221CC534 /* Pods-TodoルUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TodoルUITests-umbrella.h"; sourceTree = "<group>"; };
+		F897965DC31847BFC85FF033E15E245C /* Pods-Todoル-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Todoル-dummy.m"; sourceTree = "<group>"; };
+		FEA3CA75F5679DE7DBBF4766B5172673 /* Pods-Todoル-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Todoル-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AAC9DCB359BBC92F95BA883C1474130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7211A6554299A1840D17FD4549E7FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		366E09354561C799A49CA36E2844E92C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783D09E6FEFC6B29AA8024206E692CE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C47410CF41547374EE1437FCEACA76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1536ECFE1F24D24CBC3F219FC9CDD69A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C629F5E9B3D715F7D8D2EBB8B133545E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1848CE62317D8B480F9C53CDEC9588 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24BC10960AC3D30601B218E8B4069511 /* BubbleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				11FBA6A6825FF84D37D34288EF083FA3 /* BubbleTransition.swift */,
+				F75F236D384500594CC03F55C5F0D300 /* Support Files */,
+			);
+			path = BubbleTransition;
+			sourceTree = "<group>";
+		};
+		2C2EF83221FBE3433FF51571A963C6EC /* Pods-TodoルUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23B070082C88F96BD960D2132D3464B2 /* Info.plist */,
+				33ADDA87E5F907BB7448A018ABC1C671 /* Pods-TodoルUITests.modulemap */,
+				59F420FF2927098FB9175F1AA572AE78 /* Pods-TodoルUITests-acknowledgements.markdown */,
+				D3F79ED48ACCE9C47731A5F066B98073 /* Pods-TodoルUITests-acknowledgements.plist */,
+				E1012E667C1086B9CA9317C54CBAD7BB /* Pods-TodoルUITests-dummy.m */,
+				111A80A3DD488054DE99BE013B396260 /* Pods-TodoルUITests-frameworks.sh */,
+				2146BACE11EB0CB9BAFB755C6FC76288 /* Pods-TodoルUITests-resources.sh */,
+				F7A3910164562F8C59BB3E27221CC534 /* Pods-TodoルUITests-umbrella.h */,
+				CC1ED64D10DA20161F57BCFBEF44B122 /* Pods-TodoルUITests.debug.xcconfig */,
+				9A1FB3BF21F5CDD5CB77D5F63274AD6C /* Pods-TodoルUITests.release.xcconfig */,
+			);
+			name = "Pods-TodoルUITests";
+			path = "Target Support Files/Pods-TodoルUITests";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		610A0C006FA244D05EB75CE87745E650 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DC937F2B9B68C563D99FD3ED83EE784 /* Pods-Todoル */,
+				932FA0F6CD3A45BD596EBD6F9D835CB3 /* Pods-TodoルTests */,
+				2C2EF83221FBE3433FF51571A963C6EC /* Pods-TodoルUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6DC937F2B9B68C563D99FD3ED83EE784 /* Pods-Todoル */ = {
+			isa = PBXGroup;
+			children = (
+				01E96CAE63C2FE1B37D9F30DD053E12D /* Info.plist */,
+				4AC2678F89A5E199D876D248B9EFD13A /* Pods-Todoル.modulemap */,
+				FEA3CA75F5679DE7DBBF4766B5172673 /* Pods-Todoル-acknowledgements.markdown */,
+				513287A6381894854535DD7F78F5387E /* Pods-Todoル-acknowledgements.plist */,
+				F897965DC31847BFC85FF033E15E245C /* Pods-Todoル-dummy.m */,
+				870221E3380C583A6EE77DFCC1A7FBEA /* Pods-Todoル-frameworks.sh */,
+				AB10D1F2527E0635AE2FB3E5CA66D69E /* Pods-Todoル-resources.sh */,
+				6462C12E1B2873550B794B91DFD3DBA1 /* Pods-Todoル-umbrella.h */,
+				15217F26C9EFDD32CB8BFC0F5F517091 /* Pods-Todoル.debug.xcconfig */,
+				B17D7FC138CA21F310863A07E0853F74 /* Pods-Todoル.release.xcconfig */,
+			);
+			name = "Pods-Todoル";
+			path = "Target Support Files/Pods-Todoル";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B8C17D57F982D97B0CFF768B9B68279E /* Pods */,
+				A0482514D3CD71BD4EE8D8BFB8CA4FEE /* Products */,
+				610A0C006FA244D05EB75CE87745E650 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		932FA0F6CD3A45BD596EBD6F9D835CB3 /* Pods-TodoルTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD53ACA92AAEC4FEF646DF47A3B6B026 /* Info.plist */,
+				612EBA0E34ABFAF3DE04F9362A8EC66D /* Pods-TodoルTests.modulemap */,
+				C1CEC94FFB8562808DE5D5725F8BB80C /* Pods-TodoルTests-acknowledgements.markdown */,
+				AE441D4A0ED9EC5AB3B12FBB72B6BE2D /* Pods-TodoルTests-acknowledgements.plist */,
+				A30682D92E2A6A201159149222A2B4AA /* Pods-TodoルTests-dummy.m */,
+				2911BE634AE3D5E017B163B6C2A9ED8C /* Pods-TodoルTests-frameworks.sh */,
+				A526315352A1A94D888AE97553673681 /* Pods-TodoルTests-resources.sh */,
+				F372DB547B8E2A955143277282A73731 /* Pods-TodoルTests-umbrella.h */,
+				4F841A72825D0AD1C41023409F2BE6AB /* Pods-TodoルTests.debug.xcconfig */,
+				00909EF6CC6BBA496AEE8C95E6CB7B15 /* Pods-TodoルTests.release.xcconfig */,
+			);
+			name = "Pods-TodoルTests";
+			path = "Target Support Files/Pods-TodoルTests";
+			sourceTree = "<group>";
+		};
+		A0482514D3CD71BD4EE8D8BFB8CA4FEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE44FE0E1CCD47B77B8C91E0C25D7CD5 /* BubbleTransition.framework */,
+				0AAE2EC7FAB78902D9CCED6A1A2D38C1 /* Pods_Todo_.framework */,
+				C472A1683094D53FF646D47E2A8FD960 /* Pods_Todo_Tests.framework */,
+				A65AAB9F7F27B924AED195059C4440CB /* Pods_Todo_UITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8C17D57F982D97B0CFF768B9B68279E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24BC10960AC3D30601B218E8B4069511 /* BubbleTransition */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F75F236D384500594CC03F55C5F0D300 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4640C3F983028B370E0E2F09281E5B3E /* BubbleTransition.modulemap */,
+				497491BAF5A9B77C3B95879764640523 /* BubbleTransition.xcconfig */,
+				461B5AC8146A476E741370EEB5B8C662 /* BubbleTransition-dummy.m */,
+				5F36A05BA27248CDDA2032559EA63801 /* BubbleTransition-prefix.pch */,
+				36D3188C04332F9B763891F4674A25CD /* BubbleTransition-umbrella.h */,
+				820F619A1D9041E711AFED86B3725C16 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BubbleTransition";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9D51CF631E47026C9A1A549AB4A66912 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D73787EACF3B0618B7C2999A7C0E17 /* Pods-TodoルUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB39878AD3A5E9BB44084E0C29AD793B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53BC15AFEE67026838D66E0B307D8BF /* Pods-TodoルTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A041A90C6087B1A41C5429E7B7DE7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6849FAAD72F79DF11E5ED301BB57035F /* BubbleTransition-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67163174C9D30750EB89EA717AEDDED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B25136815C429CBD541B070D0C920E9 /* Pods-Todoル-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B36C97CBB52981193D9D3772CC36F8C /* Pods-TodoルUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EC7A2284A54C035C98232EDEAF79DE8 /* Build configuration list for PBXNativeTarget "Pods-TodoルUITests" */;
+			buildPhases = (
+				A302009DF82028DFD9D155387F352D31 /* Sources */,
+				C629F5E9B3D715F7D8D2EBB8B133545E /* Frameworks */,
+				9D51CF631E47026C9A1A549AB4A66912 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TodoルUITests";
+			productName = "Pods-TodoルUITests";
+			productReference = A65AAB9F7F27B924AED195059C4440CB /* Pods_Todo_UITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7372CA79CE92E7AC032175441663EBE4 /* BubbleTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E481E9DBD0219904DB699E6812D3EE08 /* Build configuration list for PBXNativeTarget "BubbleTransition" */;
+			buildPhases = (
+				EC9F150BE5CFC9B09C2CF61799E1FADF /* Sources */,
+				366E09354561C799A49CA36E2844E92C /* Frameworks */,
+				E2A041A90C6087B1A41C5429E7B7DE7B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BubbleTransition;
+			productName = BubbleTransition;
+			productReference = DE44FE0E1CCD47B77B8C91E0C25D7CD5 /* BubbleTransition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD4CBDFE086E68703735B672979C1AFE /* Pods-Todoル */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7891B3467B3ACAA959734651A3FBC825 /* Build configuration list for PBXNativeTarget "Pods-Todoル" */;
+			buildPhases = (
+				98CD482F32112FFAED4465581E949367 /* Sources */,
+				A6C47410CF41547374EE1437FCEACA76 /* Frameworks */,
+				F67163174C9D30750EB89EA717AEDDED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				250AFBD348333D955B1FE0CE592C28C1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Todoル";
+			productName = "Pods-Todoル";
+			productReference = 0AAE2EC7FAB78902D9CCED6A1A2D38C1 /* Pods_Todo_.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FCBF1E8406B84CAE350FB837F425B8ED /* Pods-TodoルTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54AA4A93A75A2A177FCBE114286F43F7 /* Build configuration list for PBXNativeTarget "Pods-TodoルTests" */;
+			buildPhases = (
+				BE8DC5CC5956EAAF71BFD5E61DA3CACC /* Sources */,
+				0AAC9DCB359BBC92F95BA883C1474130 /* Frameworks */,
+				AB39878AD3A5E9BB44084E0C29AD793B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TodoルTests";
+			productName = "Pods-TodoルTests";
+			productReference = C472A1683094D53FF646D47E2A8FD960 /* Pods_Todo_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A0482514D3CD71BD4EE8D8BFB8CA4FEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7372CA79CE92E7AC032175441663EBE4 /* BubbleTransition */,
+				BD4CBDFE086E68703735B672979C1AFE /* Pods-Todoル */,
+				FCBF1E8406B84CAE350FB837F425B8ED /* Pods-TodoルTests */,
+				0B36C97CBB52981193D9D3772CC36F8C /* Pods-TodoルUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98CD482F32112FFAED4465581E949367 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94119EF55A763A393046F83A556CA3F6 /* Pods-Todoル-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A302009DF82028DFD9D155387F352D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AE077C18559E6335E72BFB58861CFB /* Pods-TodoルUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8DC5CC5956EAAF71BFD5E61DA3CACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86651C4C3D9C1782F7D6635B8527056B /* Pods-TodoルTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC9F150BE5CFC9B09C2CF61799E1FADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FD2D1EDA1DF772423A8E58EE2DC666 /* BubbleTransition-dummy.m in Sources */,
+				C4E79DABD14CC24E9BDC4DABC9818652 /* BubbleTransition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		250AFBD348333D955B1FE0CE592C28C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BubbleTransition;
+			target = 7372CA79CE92E7AC032175441663EBE4 /* BubbleTransition */;
+			targetProxy = C04E2FF8D52E70AF4F0BA506AD851880 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02489410174AF4B5C95CB1CB42F6D1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 497491BAF5A9B77C3B95879764640523 /* BubbleTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BubbleTransition/BubbleTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BubbleTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BubbleTransition/BubbleTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BubbleTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		09F56BB5AB455C0E383362BC5B319CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F841A72825D0AD1C41023409F2BE6AB /* Pods-TodoルTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TodoルTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TodoルTests/Pods-TodoルTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Todo_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		28661CFB6B15CAEEEB830CF3E349CFB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15217F26C9EFDD32CB8BFC0F5F517091 /* Pods-Todoル.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Todoル/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Todoル/Pods-Todoル.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Todo_;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B825EAD7311B453F535CE6805038B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B17D7FC138CA21F310863A07E0853F74 /* Pods-Todoル.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Todoル/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Todoル/Pods-Todoル.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Todo_;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D9099D7C17A6BBEF3189E91210E1CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC1ED64D10DA20161F57BCFBEF44B122 /* Pods-TodoルUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TodoルUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TodoルUITests/Pods-TodoルUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Todo_UITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8420CDD626EF5E600E0B29AC7AB95746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 497491BAF5A9B77C3B95879764640523 /* BubbleTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BubbleTransition/BubbleTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BubbleTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BubbleTransition/BubbleTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BubbleTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84FD87D359382A37B07149A12641B965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD6D8EA008A0DFF8C75356ECE5873DA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A1FB3BF21F5CDD5CB77D5F63274AD6C /* Pods-TodoルUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TodoルUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TodoルUITests/Pods-TodoルUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Todo_UITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F594C655D48020EC34B00AA63E001773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9C68F5D42C5CDE7BF13AFA8234479F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00909EF6CC6BBA496AEE8C95E6CB7B15 /* Pods-TodoルTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TodoルTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TodoルTests/Pods-TodoルTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Todo_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FD87D359382A37B07149A12641B965 /* Debug */,
+				F594C655D48020EC34B00AA63E001773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54AA4A93A75A2A177FCBE114286F43F7 /* Build configuration list for PBXNativeTarget "Pods-TodoルTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F56BB5AB455C0E383362BC5B319CAB /* Debug */,
+				F9C68F5D42C5CDE7BF13AFA8234479F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EC7A2284A54C035C98232EDEAF79DE8 /* Build configuration list for PBXNativeTarget "Pods-TodoルUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9099D7C17A6BBEF3189E91210E1CFC /* Debug */,
+				AD6D8EA008A0DFF8C75356ECE5873DA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7891B3467B3ACAA959734651A3FBC825 /* Build configuration list for PBXNativeTarget "Pods-Todoル" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28661CFB6B15CAEEEB830CF3E349CFB5 /* Debug */,
+				2B825EAD7311B453F535CE6805038B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E481E9DBD0219904DB699E6812D3EE08 /* Build configuration list for PBXNativeTarget "BubbleTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02489410174AF4B5C95CB1CB42F6D1F6 /* Debug */,
+				8420CDD626EF5E600E0B29AC7AB95746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

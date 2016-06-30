@@ -22,7 +22,7 @@ class ShinkaViewController: UIViewController {
         let keikenchinow = String(keiken)
         let keikenchinow2 = Int(keikenchinow)
         
-        monsterArray = [UIImage(named:"anpo_1.png")!,UIImage(named:"rev_1.png")!]
+        monsterArray = [UIImage(named:"rev_1.png")!,UIImage(named:"load.png")!]
 
         if keikenchinow2 == 1000 {
             monsterImageView.image = monsterArray[0]
@@ -34,7 +34,8 @@ class ShinkaViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
-        UIImageView.animateWithDuration(1.0, delay: 0.0,
+        
+        UIImageView.animateWithDuration(3.0, delay: 0.0,
                                         options: UIViewAnimationOptions.Repeat, animations: { () -> Void in self.monsterImageView.alpha = 0.0
             }, completion: nil)
 

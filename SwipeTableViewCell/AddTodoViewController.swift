@@ -69,8 +69,7 @@ class AddTodoViewController: UIViewController {
         if saveData.arrayForKey("todo") != nil{
             todoArray = saveData.arrayForKey("todo")!
         }
-
-    }
+            }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -90,6 +89,7 @@ class AddTodoViewController: UIViewController {
         //self.presentViewController(CompleteViewController, animated: true, completion: nil)        // Viewの移動
     }
     
+
     
     /*
      // MARK: - Navigation

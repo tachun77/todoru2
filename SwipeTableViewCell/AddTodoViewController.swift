@@ -86,8 +86,8 @@ class AddTodoViewController: UIViewController {
         saveData.setObject(todoArray, forKey:"todo")
         saveData.setInteger(keiken, forKey:"keiken" )
         saveData.synchronize()
-        
-        performSegueWithIdentifier("tokanryou", sender: nil)
+//        
+//        performSegueWithIdentifier("tokanryou", sender: nil)
         //self.presentViewController(CompleteViewController, animated: true, completion: nil)        // Viewの移動
     }
     

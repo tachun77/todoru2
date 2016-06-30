@@ -16,7 +16,6 @@ class ListTableViewController: UITableViewController {
     var itemsCount: Int = 0
     var keiken: Int = 0
     
-    @IBOutlet var toAdd: UIBarButtonItem!
     
     func colorWithHexString (hex:String) -> UIColor {
         

@@ -732,7 +732,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Tatsuya-Fukushima.todoru2";
 				PRODUCT_NAME = "Todoル";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Tatsuya/Documents/iOSapp/Todoル/SwipeTableViewCell/SwipeTableViewCell-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "/Users/Tatsuya/Documents/iOSapp/Todoル/SwipeTableViewCell/SwipeTableViewCell-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -750,7 +750,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Tatsuya-Fukushima.todoru2";
 				PRODUCT_NAME = "Todoル";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Tatsuya/Documents/iOSapp/Todoル/SwipeTableViewCell/SwipeTableViewCell-Bridging-Header.h";
 			};
 			name = Release;
 		};

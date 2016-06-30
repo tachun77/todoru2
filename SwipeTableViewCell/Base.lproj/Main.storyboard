@@ -50,6 +50,9 @@
                                 <rect key="frame" x="233" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="＋"/>
+                                <connections>
+                                    <segue destination="DSn-Ju-gQO" kind="push" id="dId-mj-RbL"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -101,13 +104,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ee-Tv-e4p">
-                                <rect key="frame" x="60" y="507" width="200" height="41"/>
+                                <rect key="frame" x="60" y="507" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.27636140950972432" green="0.72759406170327101" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Add!"/>
                                 <connections>
-                                    <action selector="save:" destination="DSn-Ju-gQO" eventType="touchUpInside" id="Asg-eb-rzg"/>
-                                    <segue destination="h0z-ki-Z0i" kind="custom" id="NOe-fq-Yy2"/>
+                                    <action selector="save:" destination="DSn-Ju-gQO" eventType="touchUpInside" id="aN1-jJ-w4A"/>
+                                    <segue destination="h0z-ki-Z0i" kind="push" identifier="tokanryou" id="eRI-Lm-lGy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -119,7 +122,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Task" id="3VP-Zf-R2i"/>
                     <connections>
-                        <outlet property="completeButton" destination="4ee-Tv-e4p" id="CDj-sR-2w1"/>
                         <outlet property="task" destination="c7U-P7-KtX" id="jTS-Sl-Rnk"/>
                     </connections>
                 </viewController>
@@ -186,16 +188,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa3-7S-ERg">
-                                <rect key="frame" x="115" y="513" width="90" height="30"/>
+                                <rect key="frame" x="60" y="508" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.66666666666666663" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                 <state key="normal" title="LISTに戻る"/>
                                 <connections>
-                                    <segue destination="7fF-Iu-YLK" kind="modal" id="BfP-rx-dla"/>
+                                    <segue destination="7fF-Iu-YLK" kind="custom" id="hwM-Xr-CNl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Hiu-OS-an3"/>
                     <connections>
                         <outlet property="haikeiImageView" destination="xs5-dD-mVh" id="LZE-lT-CRT"/>
                         <outlet property="hukidasi" destination="Jma-Vt-dvS" id="cGK-8P-bK2"/>
@@ -203,12 +207,12 @@
                         <outlet property="monsterImageView" destination="VvG-9V-NaB" id="tre-Tj-6xW"/>
                         <outlet property="serihu" destination="Kye-gV-M3X" id="FQ6-cL-b7l"/>
                         <outlet property="sinkagamen" destination="9Qz-UK-eoK" id="KYn-xY-gnR"/>
-                        <outlet property="tolist" destination="Aa3-7S-ERg" id="vnd-Vd-1wn"/>
+                        <outlet property="tolist" destination="Aa3-7S-ERg" id="pix-3E-pIu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HNX-HW-xNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368" y="453"/>
+            <point key="canvasLocation" x="1368" y="445"/>
         </scene>
         <!--Shinka View Controller-->
         <scene sceneID="7Fx-wM-gMg">

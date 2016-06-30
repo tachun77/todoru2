@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import BubbleTransition
 
 class AddTodoViewController: UIViewController {
     
@@ -19,6 +19,36 @@ class AddTodoViewController: UIViewController {
     @IBOutlet var task : UITextField!
       var importance : String = ""
     
+    @IBOutlet var completeButton : UIButton!
+    
+    let transition = BubbleTransition()
+    var startingPoint = CGPointZero
+    var duration = 0.5
+    var transitionMode: BubbleTransitionMode = .Present
+    var bubbleColor: UIColor = .yellowColor()
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController
+        controller.transitioningDelegate = self
+        controller.modalPresentationStyle = .Custom
+    }
+    
+    // MARK: UIViewControllerTransitioningDelegate
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .Present
+        transition.startingPoint = completeButton.center
+        transition.bubbleColor = completeButton.backgroundColor!
+        return transition
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .Dismiss
+        transition.startingPoint = completeButton.center
+        transition.bubbleColor = completeButton.backgroundColor!
+        return transition
+    }
+
     
     @IBAction func tapScreen(sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
@@ -88,6 +118,8 @@ class AddTodoViewController: UIViewController {
         performSegueWithIdentifier("tokanryou", sender: nil)
         //self.presentViewController(CompleteViewController, animated: true, completion: nil)        // Viewの移動
     }
+    
+    
     
 
     

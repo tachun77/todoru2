@@ -45,7 +45,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Task List" id="YBp-R1-GFm">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Kys-mj-bX6"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="FpD-7X-xm1">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S7x-97-aHD">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="＋"/>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2S-qf-jbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -101,7 +107,7 @@
                                 <state key="normal" title="Add!"/>
                                 <connections>
                                     <action selector="save:" destination="DSn-Ju-gQO" eventType="touchUpInside" id="Asg-eb-rzg"/>
-                                    <segue destination="h0z-ki-Z0i" kind="modal" identifier="tokanryou" id="Uma-j1-VG6"/>
+                                    <segue destination="h0z-ki-Z0i" kind="custom" id="NOe-fq-Yy2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -113,6 +119,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Task" id="3VP-Zf-R2i"/>
                     <connections>
+                        <outlet property="completeButton" destination="4ee-Tv-e4p" id="CDj-sR-2w1"/>
                         <outlet property="task" destination="c7U-P7-KtX" id="jTS-Sl-Rnk"/>
                     </connections>
                 </viewController>

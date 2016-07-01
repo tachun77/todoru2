@@ -155,7 +155,6 @@ class ListTableViewController: UITableViewController, UIViewControllerTransition
             self.todoArray.removeAtIndex(indexPath.row)
             self.deleteCell(cell: cell)
             self.saveData.setObject(self.todoArray, forKey:"todo")
-
          //   defaults.removeObjectForKey("todo")
             
 //             NSUserDefaults.standardUserDefaults().synchronize()

@@ -70,8 +70,8 @@
             <objects>
                 <viewController id="DSn-Ju-gQO" customClass="AddTodoViewController" customModule="Todoル" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2yx-nx-Uv7"/>
-                        <viewControllerLayoutGuide type="bottom" id="Oyx-Mg-lpE"/>
+                        <viewControllerLayoutGuide type="top" id="fmn-VS-ROZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wET-3Y-30X"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HTk-Dy-g93">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -175,8 +175,8 @@
             <objects>
                 <viewController id="h0z-ki-Z0i" customClass="CompleteViewController" customModule="Todoル" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dzK-6l-c4Y"/>
-                        <viewControllerLayoutGuide type="bottom" id="WOx-aX-xv4"/>
+                        <viewControllerLayoutGuide type="top" id="J2o-2i-uc0"/>
+                        <viewControllerLayoutGuide type="bottom" id="6j4-ZC-9jc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kpM-Rv-Gbe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -191,21 +191,26 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VvG-9V-NaB">
                                 <rect key="frame" x="137" y="335" width="135" height="160"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Youが今まで得た経験値は..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8z-GT-DcE">
-                                <rect key="frame" x="68" y="141" width="184" height="21"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="吹き出し.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jma-Vt-dvS">
                                 <rect key="frame" x="39" y="277" width="143" height="110"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kye-gV-M3X">
                                 <rect key="frame" x="49" y="321" width="122" height="21"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa3-7S-ERg">
+                                <rect key="frame" x="60" y="508" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.66666666666666663" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="LISTに戻る">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7fF-Iu-YLK" kind="modal" identifier="modoru" id="hwM-Xr-CNl"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task登録完了" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-EG-IZg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
                                 <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -225,22 +230,18 @@
                                     <segue destination="G8w-Fl-M1x" kind="modal" identifier="tosinka" id="Mkf-p4-Itq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa3-7S-ERg">
-                                <rect key="frame" x="60" y="508" width="200" height="40"/>
-                                <color key="backgroundColor" red="0.23137254901960785" green="0.66666666666666663" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
-                                <state key="normal" title="LISTに戻る">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="7fF-Iu-YLK" kind="modal" identifier="modoru" id="hwM-Xr-CNl"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Youが今まで得た経験値は..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8z-GT-DcE">
+                                <rect key="frame" x="76" y="148" width="184" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.69701952000386558" green="0.92245983657067909" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hiu-OS-an3"/>
                     <connections>
+                        <outlet property="anatano" destination="A8z-GT-DcE" id="LIm-BP-nMv"/>
                         <outlet property="hukidasi" destination="Jma-Vt-dvS" id="cGK-8P-bK2"/>
                         <outlet property="kkeiken" destination="1Jn-le-eYF" id="Coh-iN-j2a"/>
                         <outlet property="monsterImageView" destination="VvG-9V-NaB" id="tre-Tj-6xW"/>
@@ -258,8 +259,8 @@
             <objects>
                 <viewController id="G8w-Fl-M1x" customClass="ShinkaViewController" customModule="Todoル" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Z5L-R6-ach"/>
-                        <viewControllerLayoutGuide type="bottom" id="AOz-3E-88E"/>
+                        <viewControllerLayoutGuide type="top" id="KRd-rL-AQt"/>
+                        <viewControllerLayoutGuide type="bottom" id="TpH-8x-6GB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="idf-PQ-LeO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -333,6 +334,6 @@
         <image name="吹き出し.png" width="380" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5Yn-BX-lJ3"/>
+        <segue reference="NLr-0u-Xqa"/>
     </inferredMetricsTieBreakers>
 </document>

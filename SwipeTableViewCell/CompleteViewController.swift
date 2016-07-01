@@ -23,6 +23,8 @@ class CompleteViewController: UIViewController ,UIViewControllerTransitioningDel
     @IBOutlet var hukidasi : UIImageView!
     @IBOutlet var tolist : UIButton!
     @IBOutlet var tosinka : UIButton!
+    @IBOutlet var anatano : UILabel!
+    
 
     
     let transition = BubbleTransition()
@@ -109,7 +111,7 @@ class CompleteViewController: UIViewController ,UIViewControllerTransitioningDel
         } else if keikenchinow2 == 2000 {
             monsterImageView.image = monsterArray[4]
         }else{
-            monsterImageView.image = monsterArray[3]
+            monsterImageView.image = monsterArray[2]
         }
         
 //        haikeiArray = [UIImage(named:"bg_gold@2x.png")!]
@@ -123,16 +125,20 @@ class CompleteViewController: UIViewController ,UIViewControllerTransitioningDel
             serihu.hidden = true
             hukidasi.hidden = true
             tolist.hidden = true
+            anatano.hidden = true
             self.view.backgroundColor = UIColor.whiteColor()
+            kkeiken.hidden = true
             
         } else {
             self.sinkagamen.hidden = true
             serihu.hidden = false
             hukidasi.hidden = false
             tolist.hidden = false
+            anatano.hidden = false
+            kkeiken.hidden = false
         }
         
-        let serihuArray = ["NICE!","Wonderful!","ナイスリストアップ！","...やるじゃん","Fantastic!!!","oh yeah!","経験値ありがと！"]
+        let serihuArray = ["NICE!","Wonderful!","いいね！","...やるじゃん","Fantastic!!!","oh yeah!","経験値ありがと！"]
         let number = Int(rand() % 7)
         serihu.text = serihuArray[number]
         // Do any additional setup after loading the view.

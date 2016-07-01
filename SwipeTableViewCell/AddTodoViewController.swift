@@ -96,15 +96,15 @@ class AddTodoViewController: UIViewController, UIViewControllerTransitioningDele
         case 1 : importance = "2"
         print(keiken)
              self.view.backgroundColor = colorWithHexString("0099ff")
-        keiken = (exp as! Int) + 500
+        keiken = (exp as! Int) + 50
             print(keiken)
         case 2 : importance = "3"
              self.view.backgroundColor = colorWithHexString("0099ff")
-        keiken = (exp as! Int) - 500
+        keiken = (exp as! Int) + 50
             print(keiken)
         case 3 : importance = "4"
              self.view.backgroundColor = colorWithHexString("0099ff")
-        keiken = (exp as! Int) - 50
+        keiken = (exp as! Int) + 50
             print(keiken)
         case 4 : importance = "5"
              self.view.backgroundColor = colorWithHexString("0099ff")

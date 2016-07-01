@@ -9,12 +9,44 @@
 import UIKit
 import BubbleTransition
 
-class ListTableViewController: UITableViewController {
+class ListTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
  
     var todoArray:[AnyObject] = []
     let saveData = NSUserDefaults.standardUserDefaults()
     var itemsCount: Int = 0
     var keiken: Int = 0
+    
+    @IBOutlet var toadd : UIButton!
+    
+    
+    let transition = BubbleTransition()
+    var startingPoint = CGPointZero
+    var duration = 10.0
+    var transitionMode: BubbleTransitionMode = .Present
+    var bubbleColor: UIColor = .yellowColor()
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController
+        controller.transitioningDelegate = self
+        controller.modalPresentationStyle = .Custom
+    }
+    
+    // MARK: UIViewControllerTransitioningDelegate
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .Present
+        transition.startingPoint = toadd.center
+        transition.bubbleColor = colorWithHexString("0099ff")
+        return transition
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .Dismiss
+        transition.startingPoint = toadd.center
+        transition.bubbleColor = toadd.backgroundColor!
+        return transition
+    }
+    
     
     
     func colorWithHexString (hex:String) -> UIColor {
@@ -96,19 +128,19 @@ class ListTableViewController: UITableViewController {
         cell.selectionStyle = .None
         //cell.detailTextLabel?.text = "details..."
         
-        if (cell.detailTextLabel?.text)! == 1 {
-        cell.backgroundColor = .blueColor()
-            
-        }else if (cell.detailTextLabel?.text)! == 2 {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
-        }else if (cell.detailTextLabel?.text)! == 3 {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
-        }else if (cell.detailTextLabel?.text)! == 4 {
-            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
-        } else {
-            cell.backgroundColor = colorWithHexString("f08080")
-        }
-        
+//        if (cell.detailTextLabel?.text)! == 1 {
+//        cell.backgroundColor = .blueColor()
+//            
+//        }else if (cell.detailTextLabel?.text)! == 2 {
+//            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
+//        }else if (cell.detailTextLabel?.text)! == 3 {
+//            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
+//        }else if (cell.detailTextLabel?.text)! == 4 {
+//            cell.backgroundColor = UIColor(red:1.0,green:0.0,blue:0.0,alpha:1.0)
+//        } else {
+//            cell.backgroundColor = U
+//        }
+//        
         cell.defaultColor = .lightGrayColor()
         //cell.firstTrigger = 0.25;
         //cell!.secondTrigger = 0.50;
@@ -137,6 +169,7 @@ class ListTableViewController: UITableViewController {
         
         cell.setSwipeGestureWithView(UIImageView(image: UIImage(named: "cross")!), color: .redColor(), mode: .Exit, state: .State3, completionBlock: { (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in
             print("cross")
+            
             self.todoArray.removeAtIndex(indexPath.row)
             self.deleteCell(cell: cell)
             self.saveData.setObject(self.todoArray, forKey:"todo")

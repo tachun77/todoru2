@@ -7,12 +7,44 @@
 //
 
 import UIKit
+import BubbleTransition
 
-class ShinkaViewController: UIViewController {
+class ShinkaViewController: UIViewController,  UIViewControllerTransitioningDelegate  {
 
     let saveData = NSUserDefaults.standardUserDefaults()
     @IBOutlet var monsterImageView : UIImageView!
     var monsterArray : [UIImage]!
+    
+    @IBOutlet var modoru : UIButton!
+    
+    let transition = BubbleTransition()
+    var startingPoint = CGPointZero
+    var duration = 10.0
+    var transitionMode: BubbleTransitionMode = .Present
+    var bubbleColor: UIColor = .yellowColor()
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController
+        controller.transitioningDelegate = self
+        controller.modalPresentationStyle = .Custom
+    }
+    
+    // MARK: UIViewControllerTransitioningDelegate
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .Present
+        transition.startingPoint = modoru.center
+        transition.bubbleColor = modoru.backgroundColor!
+        return transition
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .Dismiss
+        transition.startingPoint = modoru.center
+        transition.bubbleColor = modoru.backgroundColor!
+        return transition
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +72,12 @@ class ShinkaViewController: UIViewController {
             }, completion: nil)
 
         }
+    
+    
+    @IBAction func tosinkagamen(sender : UIButton){
+        performSegueWithIdentifier("listmodoru", sender: nil)
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -22,11 +22,12 @@ class CompleteViewController: UIViewController ,UIViewControllerTransitioningDel
     @IBOutlet var serihu : UILabel!
     @IBOutlet var hukidasi : UIImageView!
     @IBOutlet var tolist : UIButton!
+    @IBOutlet var tosinka : UIButton!
 
     
     let transition = BubbleTransition()
     var startingPoint = CGPointZero
-    var duration = 0.5
+    var duration = 20.0
     var transitionMode: BubbleTransitionMode = .Present
     var bubbleColor: UIColor = .yellowColor()
     
@@ -36,19 +37,45 @@ class CompleteViewController: UIViewController ,UIViewControllerTransitioningDel
         controller.modalPresentationStyle = .Custom
     }
     
+    func colorWithHexString (hex:String) -> UIColor {
+        
+        let cString:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
+        
+        if ((cString as String).characters.count != 6) {
+            return UIColor.grayColor()
+        }
+        
+        let rString = (cString as NSString).substringWithRange(NSRange(location: 0, length: 2))
+        let gString = (cString as NSString).substringWithRange(NSRange(location: 2, length: 2))
+        let bString = (cString as NSString).substringWithRange(NSRange(location: 4, length: 2))
+        
+        var r:CUnsignedInt = 0, g:CUnsignedInt = 0, b:CUnsignedInt = 0;
+        NSScanner(string: rString).scanHexInt(&r)
+        NSScanner(string: gString).scanHexInt(&g)
+        NSScanner(string: bString).scanHexInt(&b)
+        
+        return UIColor(
+            red: CGFloat(Float(r) / 255.0),
+            green: CGFloat(Float(g) / 255.0),
+            blue: CGFloat(Float(b) / 255.0),
+            alpha: CGFloat(Float(1.0))
+        )
+    }
+
+    
     // MARK: UIViewControllerTransitioningDelegate
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.transitionMode = .Present
         transition.startingPoint = tolist.center
-        transition.bubbleColor = tolist.backgroundColor!
+        transition.bubbleColor = UIColor.whiteColor()
         return transition
     }
     
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.transitionMode = .Dismiss
-        transition.startingPoint = tolist.center
-        transition.bubbleColor = tolist.backgroundColor!
+        transition.startingPoint = tosinka.center
+        transition.bubbleColor = UIColor.whiteColor()
         return transition
     }
 
@@ -85,17 +112,18 @@ class CompleteViewController: UIViewController ,UIViewControllerTransitioningDel
             monsterImageView.image = monsterArray[3]
         }
         
-        haikeiArray = [UIImage(named:"bg_gold@2x.png")!]
-        
-        if keikenchinow2 > 2000{
-            haikeiImageView.image = haikeiArray[0]
-        }
+//        haikeiArray = [UIImage(named:"bg_gold@2x.png")!]
+//        
+//        if keikenchinow2 > 2000{
+//            haikeiImageView.image = haikeiArray[0]
+//        }
         
         if keikenchinow2 == 1000  || keikenchinow2 == 2000 {
             self.sinkagamen.hidden = false
             serihu.hidden = true
             hukidasi.hidden = true
             tolist.hidden = true
+            self.view.backgroundColor = UIColor.whiteColor()
             
         } else {
             self.sinkagamen.hidden = true

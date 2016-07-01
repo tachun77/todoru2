@@ -45,21 +45,25 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Task List" id="YBp-R1-GFm">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="FpD-7X-xm1">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S7x-97-aHD">
-                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="FpD-7X-xm1">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S7x-97-aHD">
+                                <rect key="frame" x="274" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="＋"/>
                                 <connections>
-                                    <segue destination="DSn-Ju-gQO" kind="push" id="dId-mj-RbL"/>
+                                    <segue destination="DSn-Ju-gQO" kind="modal" id="dId-mj-RbL"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="toadd" destination="S7x-97-aHD" id="lax-wK-Iq0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2S-qf-jbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="635" y="445"/>
+            <point key="canvasLocation" x="635" y="444.99999999999983"/>
         </scene>
         <!--Add Task-->
         <scene sceneID="BdZ-dE-rmF">
@@ -75,13 +79,14 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7U-P7-KtX">
                                 <rect key="frame" x="127" y="153" width="173" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFM-ZH-JgW">
                                 <rect key="frame" x="43" y="157" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g8c-2U-zUM">
@@ -93,6 +98,7 @@
                                     <segment title="4"/>
                                     <segment title="5"/>
                                 </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="importance:" destination="DSn-Ju-gQO" eventType="valueChanged" id="T0V-0l-mns"/>
                                 </connections>
@@ -100,21 +106,50 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Importance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqj-m6-i14">
                                 <rect key="frame" x="17" y="344" width="103" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taskを追加しよう！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBJ-aL-6l2">
+                                <rect key="frame" x="0.0" y="0.0" width="322" height="114"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.66666666669999997" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ee-Tv-e4p">
-                                <rect key="frame" x="60" y="507" width="200" height="40"/>
+                                <rect key="frame" x="180" y="508" width="120" height="40"/>
                                 <color key="backgroundColor" red="0.27636140950972432" green="0.72759406170327101" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Add!"/>
+                                <state key="normal" title="Add!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="save:" destination="DSn-Ju-gQO" eventType="touchUpInside" id="aN1-jJ-w4A"/>
                                     <segue destination="h0z-ki-Z0i" kind="modal" id="YRZ-do-jid"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgX-3C-9ry">
+                                <rect key="frame" x="20" y="508" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.27636140949999999" green="0.72759406169999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJa-JP-aFY">
+                                <rect key="frame" x="20" y="508" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.27636140949999999" green="0.72759406169999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="DSn-Ju-gQO" eventType="touchUpInside" id="e2w-0z-GWP"/>
+                                    <segue destination="7fF-Iu-YLK" kind="modal" identifier="cancel" id="5Yn-BX-lJ3"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="qXk-Jy-t3t" appends="YES" id="1mG-te-zgS"/>
@@ -122,6 +157,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Task" id="3VP-Zf-R2i"/>
                     <connections>
+                        <outlet property="cancel" destination="ZJa-JP-aFY" id="GeO-pi-u42"/>
                         <outlet property="task" destination="c7U-P7-KtX" id="jTS-Sl-Rnk"/>
                     </connections>
                 </viewController>
@@ -132,7 +168,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="997" y="445"/>
+            <point key="canvasLocation" x="991" y="445"/>
         </scene>
         <!--Complete View Controller-->
         <scene sceneID="91c-p3-6nt">
@@ -146,33 +182,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xs5-dD-mVh">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task登録完了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-EG-IZg">
-                                <rect key="frame" x="108" y="28" width="104" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jn-le-eYF">
                                 <rect key="frame" x="83" y="177" width="154" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VvG-9V-NaB">
                                 <rect key="frame" x="137" y="335" width="135" height="160"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qz-UK-eoK">
-                                <rect key="frame" x="49" y="227" width="223" height="30"/>
-                                <state key="normal" title="おや、モンスターの様子が...？→"/>
-                                <connections>
-                                    <action selector="tosinkagamen:" destination="h0z-ki-Z0i" eventType="touchUpInside" id="O9q-o8-MDF"/>
-                                    <segue destination="G8w-Fl-M1x" kind="modal" identifier="tosinka" id="Mkf-p4-Itq"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Youが得た今までの経験値は..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8z-GT-DcE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Youが今まで得た経験値は..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8z-GT-DcE">
                                 <rect key="frame" x="68" y="141" width="184" height="21"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -187,21 +206,41 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task登録完了" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-EG-IZg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qz-UK-eoK">
+                                <rect key="frame" x="49" y="227" width="223" height="30"/>
+                                <color key="backgroundColor" red="0.88627450980392153" green="0.44705882352941179" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="おや、モンスターの様子が...？→">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tosinkagamen:" destination="h0z-ki-Z0i" eventType="touchUpInside" id="O9q-o8-MDF"/>
+                                    <segue destination="G8w-Fl-M1x" kind="modal" identifier="tosinka" id="Mkf-p4-Itq"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa3-7S-ERg">
                                 <rect key="frame" x="60" y="508" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.23137254901960785" green="0.66666666666666663" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
-                                <state key="normal" title="LISTに戻る"/>
+                                <state key="normal" title="LISTに戻る">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="7fF-Iu-YLK" kind="custom" id="hwM-Xr-CNl"/>
+                                    <segue destination="7fF-Iu-YLK" kind="modal" identifier="modoru" id="hwM-Xr-CNl"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.69701952000386558" green="0.92245983657067909" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hiu-OS-an3"/>
                     <connections>
-                        <outlet property="haikeiImageView" destination="xs5-dD-mVh" id="LZE-lT-CRT"/>
                         <outlet property="hukidasi" destination="Jma-Vt-dvS" id="cGK-8P-bK2"/>
                         <outlet property="kkeiken" destination="1Jn-le-eYF" id="Coh-iN-j2a"/>
                         <outlet property="monsterImageView" destination="VvG-9V-NaB" id="tre-Tj-6xW"/>
@@ -212,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HNX-HW-xNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368" y="445"/>
+            <point key="canvasLocation" x="1368" y="444.99999999999983"/>
         </scene>
         <!--Shinka View Controller-->
         <scene sceneID="7Fx-wM-gMg">
@@ -232,10 +271,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Neq-ev-lyB">
                                 <rect key="frame" x="93" y="316" width="135" height="160"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulation!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2H-ux-JKB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulation!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2H-ux-JKB">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.8666666666666667" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQl-sJ-jtu">
+                                <rect key="frame" x="60" y="508" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.91941341440422331" green="0.5300884678153488" blue="0.36054600116653185" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="LISTに戻る">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7fF-Iu-YLK" kind="modal" identifier="listmodoru" id="NLr-0u-Xqa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="モンスターが進化したよ！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mq-3g-hdL">
+                                <rect key="frame" x="58" y="92" width="204" height="40"/>
+                                <color key="backgroundColor" red="0.91941341440000002" green="0.72017852397237803" blue="0.09879336989073581" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -243,6 +300,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="modoru" destination="qQl-sJ-jtu" id="A4J-DP-CY5"/>
                         <outlet property="monsterImageView" destination="Neq-ev-lyB" id="0ft-C0-uHK"/>
                     </connections>
                 </viewController>
@@ -255,6 +313,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7fF-Iu-YLK" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hVJ-9R-yax"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="V8F-Jj-feJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -266,11 +325,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AfO-RC-wML" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="177.06666666666666" y="445.88"/>
+            <point key="canvasLocation" x="177.06666666666666" y="445.87999999999982"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg_gold.png" width="300" height="300"/>
         <image name="吹き出し.png" width="380" height="240"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5Yn-BX-lJ3"/>
+    </inferredMetricsTieBreakers>
 </document>
